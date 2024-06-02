@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Pet Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @font-face {
+      font-family: 'Cute Jellyfish';
+      src: url('fonts/Cute Jellyfish.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Quicksand';
+      src: url('fonts/Quicksand-Light.ttf') format('truetype');
+    }
+
+    h1, h2, h3, header nav ul li a {
+      font-family: 'Cute Jellyfish', sans-serif;
+    }
+
+    body, p, ul {
+      font-family: 'Quicksand', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <img src="media/tweakedLogo_720p.png" alt="Aqua Pet Logo" class="hero-logo">
+          <p>Kambrium Games presents</p>
+          <p>Take care of this tiny sea creature! Found only in the most remote parts of the ocean, there are only a few of them left but you can give one a happy life.</p>
+          <p>After all, you can't say no to those googly eyes.</p>
+          <h1 class="download-play">Download & Play Now!</h1>
+          <div class="download-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.KambriumGames.AquaPet" class="google-play-button">
+              <img src="media/google-play-badge.png" alt="Google Play">
+            </a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <iframe src="https://www.youtube.com/embed/8VciojAmqhI?mute=1&autoplay=1&loop=1&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1" width="310" height="551" frameborder="0"></iframe>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="feature-image">
+          <img src="media/pet.png" alt="Pet Image">
+        </div>
+        <div class="feature-content">
+          <h1>Features</h1>
+          <ul>
+            <li>Receive an egg of a mysterious sea creature and be there when it hatches.</li>
+            <li>Learn how to handle your pet's complex personality and satisfy the ever-changing needs.</li>
+            <li>Unlock new foods to provide a healthier diet to your virtual pet.</li>
+            <li>Keep your pet healthy with proper hygiene and healthy diet but also have medicines in stock for times of sickness.</li>
+            <li>Teach your creature what to like and dislike by using reinforcement.</li>
+            <li>Collect pearls, food and other items from mini games.</li>
+            <li>Browse the ever-growing fashion collection and give your pet a new look for every occasion.</li>
+            <li>Unlock the challenging achievements for valuable rewards.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="screenshots" id="screenshots">
+        <h1>Screenshots</h1>
+        <div class="screenshot-gallery">
+          <span class="arrow left" onclick="scrollGallery(-1)"><img src="media/arrowThin_left.png" width="48" height="96"></span>
+          <div class="screenshot-album">
+            <img src="media/egg.jpg" alt="Screenshot 1" class="screenshot">
+            <img src="media/outfits.jpg" alt="Screenshot 2" class="screenshot">
+            <img src="media/food.jpg" alt="Screenshot 3" class="screenshot">
+            <img src="media/health.jpg" alt="Screenshot 4" class="screenshot">
+            <img src="media/toys.jpg" alt="Screenshot 5" class="screenshot">
+            <img src="media/mazes.jpg" alt="Screenshot 6" class="screenshot">
+            <img src="media/games.jpg" alt="Screenshot 7" class="screenshot">
+            <img src="media/achievements.jpg" alt="Screenshot 8" class="screenshot">
+          </div>
+          <span class="arrow right" onclick="scrollGallery(1)"><img src="media/arrowThin_right.png" width="48" height="96""></span>
+        </div>
+      </section>
+
+      <div class="download-buttons">
+        <h1>Download & Play Now!</h1>
+        <a href="https://play.google.com/store/apps/details?id=com.KambriumGames.AquaPet" class="google-play-button">
+          <img src="media/google-play-badge.png" alt="Google Play">
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Kambrium Games. All rights reserved.</p>
+      <p><a href="#">Terms & Conditions</a> • <a href="#">Privacy Policy</a> • <a href="#">Contact</a> • <a href="#">Press Kit</a></p>
+    </footer>
+  </div>
+
+  <div class="social-buttons">
+    <a href="https://www.facebook.com/KambriumGames" target="_blank" class="social-button"><img src="media/facebook.png" alt="F" width="32" height="32"></a>
+    <a href="https://www.youtube.com/@kambriumgames" target="_blank" class="social-button"><img src="media/youtube.png" alt="Y" width="32" height="32"></a>
+	<a href="https://www.instagram.com/kambriumgames" target="_blank" class="social-button"><img src="media/instagram.png" alt="I" width="30" height="30"></a>
+  </div>
+
+  <script>
+    function scrollGallery(direction) {
+      const gallery = document.querySelector('.screenshot-album');
+      const scrollAmount = direction * 300;
+      gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
