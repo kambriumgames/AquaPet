@@ -1,2 +1,2 @@
-# AquaPet
-Aqua Pet - The Caring Game
+# Aqua Pet
+Aqua Pet - The Caring Game Landing Site
