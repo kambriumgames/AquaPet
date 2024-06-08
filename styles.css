@@ -1,4 +1,16 @@
 /* General Styles */
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('fonts/Quicksand-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cute Jellyfish';
+  src: url('fonts/CuteJellyfish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: #fff;
   font-family: 'Quicksand', sans-serif;
@@ -209,6 +221,63 @@ nav ul li a {
   right: 10px;
 }
 
+/* Terms Section Styles */
+.terms-container {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.terms-header {
+  font-family: 'Cute Jellyfish', sans-serif;
+  color: #fff;
+  font-size: 46px; /* Match with feature section */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.terms-container h1 {
+  text-align: center;
+  font-family: 'Quicksand-Light', sans-serif;
+  font-size: 35px; /* Adjust to fit well under h1 */
+  margin-top: 72px;
+  margin-bottom: 60px;
+}
+
+.terms-container h2 {
+  text-align: left;
+  font-family: 'Quicksand-Light', sans-serif;
+  font-size: 26px; /* Adjust to fit well under h1 */
+  margin-top: 56px;
+  margin-bottom: 8px;
+}
+
+.terms-container h3 {
+  text-align: left;
+  font-family: 'Quicksand-Light', sans-serif;
+  font-size: 20px; /* Adjust to fit well under h1 */
+  margin-top: 24px;
+  margin-bottom: -12px;
+}
+
+.terms-container p {
+  font-family: 'Quicksand-Light', sans-serif; /* Use the lighter variant for body text */
+  font-size: 19px; /* Adjust to match the design */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.terms-container ul li {
+  font-family: 'Quicksand-Light', sans-serif; /* Use the lighter variant for body text */
+  font-size: 19px; /* Adjust to match the design */
+  margin-bottom: 10px;
+}
+
+.terms-container a {
+  color: #ffdd57;
+  text-decoration: underline;
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
@@ -218,6 +287,8 @@ footer {
 }
 
 footer p {
+  text-align: center;
+  font-family: 'Quicksand-Light', sans-serif;
   margin: 5px 0;
 }
 
